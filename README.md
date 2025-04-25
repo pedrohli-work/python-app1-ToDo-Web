@@ -6,8 +6,8 @@ A minimal and functional To-Do list app built with **Python** and **Streamlit**.
 
 ## 📂 Files
 
-- `functions.py`: Contains all core logic (add, edit, complete tasks)
-- `web.py`: Main Streamlit app interface
+- `new_functions.py`: Contains all core logic (add, edit, complete tasks)
+- `new_web.py`: Main Streamlit app interface
 - `requirements.txt`: Dependencies for the app
 - `.gitignore`: Keeps virtual environments and cache files out of Git
 
