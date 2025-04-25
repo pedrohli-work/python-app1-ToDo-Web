@@ -13,11 +13,13 @@ todos = functions.get_todos()
 def add_todo():
     """Add a new todo from the input field to the list and save it."""
     # Retrieves the text from the input field (stored in session_state).
-    new_todo = st.session_state["new_todo"] + "\n"
+    new_todo = st.session_state["new_todo"].strip() + "\n"
     # Appends the new todo to the list.
     todos.append(new_todo)
     # Saves the updated list back to the file.
     functions.write_todos(todos)
+    # Clean the textbox after the user input.
+    st.session_state["new_todo"] = ""
 
 # Sets the main title of the web app.
 st.title("My Todo App")
