@@ -1,3 +1,4 @@
+import os
 # A constant that stores the path to the file 
 # where todos will be read from and written to.
 FILEPATH = "todos.txt"
@@ -9,6 +10,10 @@ def get_todos(filepath=FILEPATH):
     """Read the list of todos from the 'todos.txt' file 
     and return them as a list of strings.
     """
+    # Cria o arquivo vazio
+    if not os.path.exists(FILEPATH):
+        with open(FILEPATH, 'w', encoding="utf-8") as f:
+            pass  
     # Opens the file in read mode
     with open(filepath, 'r',encoding="utf-8") as file_local:
         # Reads all lines from the file into a list called todos_local.
