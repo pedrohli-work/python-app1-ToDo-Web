@@ -1,0 +1,30 @@
+# Ambientes virtuais
+venv/
+ENV/
+env/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de log e banco temporário
+*.log
+*.sqlite3
+
+# Configs locais de IDEs/editors
+.vscode/
+.idea/
+
+# Executáveis criados por PyInstaller
+*.spec
+dist/
+build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivo de tarefas (caso for criado automaticamente por build)
+todos.txt
